@@ -51,10 +51,15 @@
             <version>23.0</version>
         </dependency>
         <!--MySQL JDBC驱动-->
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
+        <!--PostGreSQL JDBC驱动 (used for deployment on Heroku) -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
         <!--MyBatis 及 插件依赖-->
         <dependency>
