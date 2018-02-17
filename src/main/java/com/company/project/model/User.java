@@ -12,12 +12,10 @@ public class User {
 
     private String password;
 
-    @Column(name = "nick_name")
     private String nickName;
 
     private Integer sex;
 
-    @Column(name = "register_date")
     private Date registerDate;
 
     /**
@@ -63,7 +61,7 @@ public class User {
     }
 
     /**
-     * @return nick_name
+     * @return nickName
      */
     public String getNickName() {
         return nickName;
@@ -91,7 +89,7 @@ public class User {
     }
 
     /**
-     * @return register_date
+     * @return registerDate
      */
     public Date getRegisterDate() {
         return registerDate;

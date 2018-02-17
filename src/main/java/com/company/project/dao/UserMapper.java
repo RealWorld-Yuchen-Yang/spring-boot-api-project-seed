@@ -8,4 +8,7 @@ import java.util.List;
 
 public interface UserMapper extends Mapper<User> {
     List<User> selectAll();
+
+    @Override
+    int insertSelective(User user);
 }
