@@ -11,4 +11,13 @@ public interface UserMapper extends Mapper<User> {
 
     @Override
     int insertSelective(User user);
+
+    @Override
+    int updateByPrimaryKeySelective(User user);
+
+    @Override
+    User selectByPrimaryKey(Object o);
+
+    @Override
+    int deleteByPrimaryKey(Object o);
 }
